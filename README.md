@@ -10,7 +10,7 @@ This is the official **Allpay** payment gateway plugin for **VirtueMart**, a pop
 - Secure payment redirection and notification handling
 - Support for VAT and installment payments
 - Configurable API credentials and minimum order amount for installments
-- Compatible with Joomla 4.x and VirtueMart 4.x
+- Compatible with Joomla 4.x, 5.x and VirtueMart 4.x
 
 ---
 
