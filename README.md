@@ -25,7 +25,7 @@ This is the official **Allpay** payment gateway plugin for **VirtueMart**, a pop
 
 ## 📦 Installation
 
-1. Download the latest `.zip` release of the plugin from [Releases](https://github.com/your-repo-url/releases).
+1. Download the latest `.zip` release of the plugin from [Releases](https://github.com/shmyak2000/allpay-joomla-virtuemart-extention/releases).
 2. In your Joomla Admin panel, go to:  
    `Extensions → Manage → Install`
 3. Upload the plugin zip file.
