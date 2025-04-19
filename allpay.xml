@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="4.0" group="vmpayment" method="upgrade">
+    <name>VM Payment - Allpay</name>
+    <author>Allpay</author>
+    <authorEmail>info@allpay.co.il</authorEmail>
+    <authorUrl>https://allpay.co.il</authorUrl>
+    <creationDate>2025-04-16</creationDate>
+    <version>1.0.0</version>
+    <description>Allpay Payment Plugin for VirtueMart</description>
+    <license>GPLv3 or later</license>
+    <copyright>(C) 2025 Allpay.co.il. All Rights Reserved.</copyright>
+
+    <files>
+        <filename plugin="allpay">allpay.php</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Allpay Settings">
+                <field name="login" type="text" class="input-large" label="Allpay API Login" description="API Login" required="true" />
+                <field name="api_key" type="text" class="input-large" label="Allpay API Key" description="API Key" required="true" />
+                <field name="vat" type="list" default="0" label="VAT" description="VAT">
+                    <option value="0">No VAT</option>
+                    <option value="1">VAT included</option>
+                </field>
+                <field name="installment_n" type="text" default="0" class="input-large" label="Installment max payments" description="Maximum number of installment payments. Up to 12, zero to disable." />
+                <field name="installment_min_order" default="0" type="text" class="input-large" label="Installment min order amount" description="Minimum order amount for installments. Zero for orders of any amount." />
+            </fieldset>
+        </fields>
+    </config>
+
+    <updateservers>
+        <server type="extension" name="Allpay Update Server">https://allpay.to/plugins/joomla-virtuemart/allpay.xml</server>
+    </updateservers>
+    
+</extension>
